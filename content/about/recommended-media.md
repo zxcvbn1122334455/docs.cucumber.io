@@ -1,0 +1,21 @@
+---
+menu:
+- about
+title: Other media about Cucumber
+---
+
+Here is a list of Cucumber-related videos and podcasts.
+
+For blog posts and tutorials, see [Blog posts](/about/blog-posts/).
+
+|                                                                                                                                                                                                                                                                         |                                                                                                                                                       |                    |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------|
+| **Video**                                                                                                                                                                                                                                                                | **Description**                                                                                                                                       | **Posting Date**          |
+| [DevLin2017 - Aslak Hellesøy - Testable Architectures](https://www.youtube.com/watch?v=uwH83PjR98g)                                                                                                                                                                      | Testable Architectures; importance of fast feedback for a system to be usable                                                                         | December 19, 2017  |
+
+
+|                                                                                                                                                                                                                                                                         |                                                                                                                                                       |                    |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------|
+| **Podcast**                                                                                                                                                                                                                                                                | **Description**                                                                                                                                       | **Posting Date**   |
+| [Test talks 180: Ten Years of Cucumber BDD with Aslak Hellesøy](https://joecolantonio.com/testtalks/180-ten-years-cucumber-bdd-aslak-hellesoy/)                                                                                                                            | Thoughts and reflections on ten years of Cucumber                                                                                                     | November 26, 2017  |
+| [Bet on Yourself - Episode 16: Matt Wynne](https://www.betonyourself.com/podcast/episode-16-matt-wynne)                                                                                                                                                                    | About building Cucumber Pro, a product designed to solve collaboration problems and bridge communication in software.                                 |                    |
