@@ -24,7 +24,7 @@ cucumber --require features features/authentication/authenticate_user.feature
 
 {{% block "java" %}}
 ## CLI Runner
-The Command-Line Interface Runner (CLI Runner) is an executable Java class that can be run from the command-line, or from any build tool (such as Maven, Gradle or Ant), or an IDE.
+The Command-Line Interface Runner (CLI Runner) is an executable Java class that can be run from the command-line, any build tool (such as Maven, Gradle or Ant), or an IDE (such as IntelliJ IDEA or Eclipse).
 
 ```
 java cucumber.api.cli.Main
@@ -53,14 +53,16 @@ Cucumber does not work when installed globally because cucumber needs to be requ
 
 {{% /block %}}
 
+For more information on configuring how you run your tests from the command line, see [configuration](/configuration/#command-line).
+
 {{% block "java" %}}
 # From a test framework
-You can run features using a test framework. This will allow you to execute Cucumber at the same time as you execute 
+You can run features using a test framework, like JUnit or TestNG. This will allow you to execute Cucumber at the same time as you execute
 your tests. It simplifies integration with your continuous integration build.
 
 ## JUnit Runner
 
-The JUnit runner uses the JUnit framework to run Cucumber.
+The JUnit runner uses the [JUnit](http://junit.org/junit4/) framework to run Cucumber.
 
 To use the JUnit runner you need to add the following dependencies:
 
@@ -109,11 +111,14 @@ an IDE or a build tool (for example `mvn test`).
 
 ## TestNG Runner
 
+You can also use [TestNG](http://testng.org/doc/) to run your Cucumber tests.
 There is no documentation yet, but the code is on [GitHub](https://github.com/cucumber/cucumber-jvm/tree/master/examples/java-calculator-testng)
 
 ## Android Runner
 
 There is no documentation yet, but the code is on [GitHub](https://github.com/cucumber/cucumber-jvm/tree/master/android).
+
+For more information on configuring how you run your tests from a test framework, see [configuration](/configuration/#test-framework).
 
 ## IDE / Third-party runners
 Finally, you can run features from an IDE.
@@ -123,8 +128,27 @@ IntelliJ IDEA and Eclipse have plugins that can run features and scenarios from 
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/help/cucumber.html)
 - [Cucumber-Eclipse](https://github.com/cucumber/cucumber-eclipse)
 
-Please refer to the documentation for the third-party runner for details about how to pass configuration options to Cucumber.
+### Running from IntelliJ IDEA
+ To run your test from IntelliJ:
+
+ 1. Right click the feature file in your **Project** overview on the left
+
+ 2. Select **Run 'Feature: <feature>'** from the context menu
+
+ {{% note "Formatter error"%}}
+ If you are using Cucumber v2.x or higher, you might get an error message that mentions `CucumberJvmSMFormatterUtil` when running the test for the first time.
+ If so, open your **Run Configurations** and remove the following argument `--plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter`.
+ {{% /note %}}
+
+ {{% note "Specify glue location"%}}
+ If you have defined your step(s) but Cucumber still says they're undefined, you might need to tell Cucumber where to find your `StepDefinitions.java` file (i.e. the 'glue' between your Gherkin and your programming code).
+ If so, open your **Run Configurations** and add the name of your `<project>` directory in the **Glue** field.
+ {{% /note %}}
+
 {{% /block %}}
+
+For more information on configuring how you run your tests from an IDE, see [configuration](/configuration/#ide-third-party-runners).
+
 
 # From a build tool
 You can also run features using a build tool.

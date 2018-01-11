@@ -109,6 +109,8 @@ Feature path examples:
 ```
 
 
+# Test Framework
+
 The [JUnit Runner](/running/#junit-runner) and [Android Runner](/running/#android-runner) can also pick
 up configuration options defined via the `@CucumberOptions` annotation.
 
@@ -169,3 +171,6 @@ You can also define common command-line options in a [`cucumber.yml`](/cucumber/
 {{% block "javascript" %}}
 For more information on how to configure options, have a look at the [cucumber-js docs on GitHub](https://github.com/cucumber/cucumber-js/blob/master/docs/cli.md).
 {{% /block %}}
+
+# IDE / Third-party runners
+Please refer to the documentation for the third-party runner for details about how to pass configuration options to Cucumber.
