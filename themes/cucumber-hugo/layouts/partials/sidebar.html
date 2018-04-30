@@ -1,5 +1,7 @@
-{{ $currentPage := . }}
+<h1 class="title is-1">Hello</h1>
+
 <nav class="panel">
+  {{ $currentPage := . }}
   {{ range .Site.Menus.main }}
     {{ $expandChildren := (not .Page.Params.collapseChildren) }}
     <a href="{{.URL}}" class="panel-block {{ if eq $currentPage .Page }}is-active{{ end }}">

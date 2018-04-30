@@ -13,4 +13,28 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.7.3/dist/instantsearch-theme-algolia.min.css">
 
   <script src="/js/site.js"></script>
+
+  <style>
+body {
+  overflow-x: hidden;
+}
+
+/* https://benfrain.com/independent-scrolling-panels-body-scroll-using-just-css/ */
+#container {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  backface-visibility: hidden;
+  will-change: overflow;
+}
+
+#container > .column {
+  overflow: auto;
+  height: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+}
+  </style>
 </head>
