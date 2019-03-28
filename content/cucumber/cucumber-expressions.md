@@ -12,7 +12,7 @@ markup: mmark
 
 Cucumber uses *expressions* to link a [Gherkin Step](/gherkin/reference#steps)
 to a [Step Definition](/cucumber/step-definitions). You can use
-[Regular Expressions](https://en.wikipedia.org/wiki/Regular_expression) or *Cucumber Expressions*.
+[Regular Expressions](/cucumber/regular-expressions) or *Cucumber Expressions*.
 
 Cucumber Expressions offer similar functionality to Regular Expressions, with a syntax 
 that is easier to read and write. Cucumber Expressions are also

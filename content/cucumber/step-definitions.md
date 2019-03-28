@@ -74,7 +74,9 @@ Given('I have {int} cukes in my belly', function (cukes) {
 
 # Expressions
 
-A step definition's *expression* can either be a [Regular Expression](https://en.wikipedia.org/wiki/Regular_expression) or a [Cucumber Expression](/cucumber/cucumber-expressions). If you prefer to use Regular Expressions, each *capture group* from the match will be passed as arguments to the step definition's {{% stepdef-body %}}.
+A step definition's *expression* can either be a [Regular Expression](https://en.wikipedia.org/wiki/Regular_expression) 
+or a [Cucumber Expression](/cucumber/cucumber-expressions). If you prefer to use Regular Expressions, each 
+*capture group* from the match will be passed as arguments to the step definition's {{% stepdef-body %}}.
 
 {{% block "java" %}}
 ```java
